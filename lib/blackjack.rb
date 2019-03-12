@@ -34,7 +34,8 @@ def hit?(card_total)
     if input == "h"
       card_total += deal_card
     elsif input == "s"
-      card_total
+      prompt_user
+      input
     else
       invalid_command
       prompt_user
@@ -51,13 +52,13 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
-  welcome
-  score = initial_round
-  until score >= 21
-    display_card_total(score)
-    hit?(score)
-  end
-  end_game(score)
-end
+#def runner
+#  welcome
+#  score = initial_round
+#  until score >= 21
+#    display_card_total(score)
+#    hit?(score)
+#  end
+#  end_game(score)
+#end
     
