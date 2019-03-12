@@ -52,6 +52,12 @@ end
 #####################################################
 
 def runner
-  
+  welcome
+  score = initial_round
+  until score >= 21
+    display_card_total
+    hit?(score)
+  end
+  end_game
 end
     
